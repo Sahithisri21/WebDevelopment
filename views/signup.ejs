@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-state="1">
+        <style>
+            .d1{
+                width: 450px;
+                background-attachment: white;
+                padding-top: 10px;
+                padding: 40px;
+                margin: auto;
+                color: yellow;
+                margin-top: 2%;
+                border: 1px white;
+                background-color: black;
+            }
+            #fname,#lname,#email,#pwd{
+                width: 350px;
+            }
+            #phone{
+                width: 300px;
+            }
+            
+            body {
+  background-image: url("https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZHl8ZW58MHx8MHx8&w=1000&q=80");
+}
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+                         
+        
+        <div class="d1">
+        <form action="/signupsubmit" method="get" class="form-group">
+            <b>Firstname</b> <input type="text" required name="fname" id="fname" class="form-control"><br>
+            <b>Lastname </b>: <input type="text" required name="lname" id="lname" class="form-control"><br>
+            <b>Email :</b> <input type="email" required name="email" id="email" class="form-control"><br>
+            <b>Password : </b><input type="password" required name="pwd" id="pwd" class="form-control"><br>
+            
+            <input type="submit" value="signup" style="margin-left:auto ;margin-right:auto;width: 100px;
+            color: black; background-color: yellow; height: 30px;">
+            <hr><br>
+            <p align="center">already have an account? then <a href="/login" >login</a></p>
+        </form>
+        </div>
+    </body>
+</html>
+
